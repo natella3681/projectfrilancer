@@ -51,6 +51,39 @@ window.onload = function() {
     iconMenu.addEventListener('click', toggleMenu);
     // бургер меню кончилось
 
+    // делаю чтобы пункты меню подвала при определенном разрешении открывались по нажатию кнопки
+
+    const btns = document.querySelectorAll(".menu-footer__title");
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    const list = e.target.closest(".menu-footer__column").querySelector(".menu-footer__list");
+     if(document.body.offsetWidth <= 760) {
+       list.classList.toggle("active");
+     }
+  });
+});
+    /*const footerTitleBtns = document.querySelectorAll('.menu-footer__title');
+    const footerLists = document.querySelectorAll('.menu-footer__list');
+    const menuList = document.querySelector('.menu__list');
+
+    footerTitleBtns.forEach(footerTitleBtn => {
+        footerTitleBtn.addEventListener('click', (e) => {
+          const target = e.target;
+          if(target && document.body.offsetWidth <= 760) {
+              console.log('work!');
+
+          footerLists.forEach((footerList) => {
+              if(getComputedStyle(footerList).display === 'none') {
+                footerList.classList.add('active');
+              } else {
+                footerList.classList.remove('active');
+              }
+            })
+          }
+         })
+       })
+
     // подпункты меню
     /*const menuItems = document.querySelectorAll('.menu__item');
     const menuSubLists = document.querySelectorAll('.menu__sub-list');
@@ -74,5 +107,6 @@ window.onload = function() {
     })*/
     
     
-}
 
+
+}
