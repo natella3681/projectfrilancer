@@ -12,6 +12,7 @@ if(document.querySelector('.slider-main__body')) {
         loopAditionalSliders: 5,
         preloadImages: false,
         parallax: true,
+        //centeredSlides: true,
         // dots
         pagination: {
             el: '.controls-slider-main__dotts',

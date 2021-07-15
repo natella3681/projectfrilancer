@@ -1,4 +1,5 @@
 
+
 window.onload = function() {
     document.addEventListener('click', documentActions);
 
@@ -55,34 +56,30 @@ window.onload = function() {
 
     const btns = document.querySelectorAll(".menu-footer__title");
 
-btns.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    const list = e.target.closest(".menu-footer__column").querySelector(".menu-footer__list");
-     if(document.body.offsetWidth <= 760) {
-       list.classList.toggle("active");
-     }
-  });
-});
-    /*const footerTitleBtns = document.querySelectorAll('.menu-footer__title');
-    const footerLists = document.querySelectorAll('.menu-footer__list');
-    const menuList = document.querySelector('.menu__list');
+    btns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+        const list = e.target.closest(".menu-footer__column").querySelector(".menu-footer__list");
+            if(document.body.offsetWidth <= 760) {
+                list.classList.toggle("active");
+            }
+        });
+    });
 
-    footerTitleBtns.forEach(footerTitleBtn => {
-        footerTitleBtn.addEventListener('click', (e) => {
-          const target = e.target;
-          if(target && document.body.offsetWidth <= 760) {
-              console.log('work!');
+    // header
 
-          footerLists.forEach((footerList) => {
-              if(getComputedStyle(footerList).display === 'none') {
-                footerList.classList.add('active');
-              } else {
-                footerList.classList.remove('active');
-              }
-            })
-          }
-         })
-       })
+    const headerElem = document.querySelector('.header');
+
+    const callback = function(entries,observer) {
+        //console.log('work!');
+        if(entries[0].isIntersecting) {
+            headerElem.classList.add('_scroll');
+            }
+    };
+
+    const headerObserver = new IntersectionObserver(callback);
+    headerObserver.observe(headerElem);
+
+    
 
     // подпункты меню
     /*const menuItems = document.querySelectorAll('.menu__item');

@@ -1,0 +1,14 @@
+$fontSize: 16px;
+$fontFamily: "Gilroy";
+$mainColor: #3a3a3a;
+$orangeColor: #e89f71;
+$greyColor: #898989;
+$darkGreyColor: #616161;
+
+$maxWidth: 1440;
+$maxWidthContainer: 1270; // добавила +30 пикселей по 15 пикселей отступы безопасности, чтобы не прилипал контейнер
+
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
