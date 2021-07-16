@@ -70,7 +70,6 @@ window.onload = function() {
     const headerElem = document.querySelector('.header');
 
     const callback = function(entries,observer) {
-        //console.log('work!');
         if(entries[0].isIntersecting) {
             headerElem.classList.add('_scroll');
             }
