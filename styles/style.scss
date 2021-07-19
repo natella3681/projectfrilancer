@@ -92,11 +92,9 @@
   // .header__search
 
   &__search {
+    @include adaptiv-value("padding-right", 32, 15, 1);
     @media (min-width: $md2+px) {
       flex: 1 1 auto;
-    }
-    @media (max-width: $md3+px) {
-      padding-right: 32px;
     }
   }
   // .header__actions
