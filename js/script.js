@@ -37,6 +37,16 @@ window.onload = function() {
             addToCart(targetElement, productId);
             e.preventDefault();
         }
+
+        if(targetElement.classList.contains('cart-header__icon') || targetElement.closest('.cart-header__icon')) {
+            if(document.querySelector('.cart-list').children.length > 0) {
+                document.querySelector('.cart-header__body').classList.toggle('_active');
+            }
+            e.preventDefault();
+         } else if(!targetElement.closest('.cart-header') && !targetElement.classList.contains('actions-product__button')) {
+                document.querySelector('.cart-header__body').classList.remove('_active');
+            }
+        //}
     }
 
     // ibg и адаптация картинки 
