@@ -1372,33 +1372,11 @@ body.ie ._ibg img {
   border: 1px solid #e89f71;
   min-width: 245px;
 }
+.products__more._hold {
+  opacity: 0.4;
+  cursor: default;
+}
 
-/*. {
-  // ._container
-
-  &_container {
-  }
-
-  // ._title
-
-  &_title {
-  }
-
-  // ._ibg
-
-  &_ibg {
-  }
-
-  // ._icon-share
-
-  &_icon-share {
-  }
-
-  // ._icon-favorite
-
-  &_icon-favorite {
-  }
-}*/
 .item-product {
   background-color: #f4f5f7;
   display: flex;
@@ -1533,6 +1511,10 @@ body.ie ._ibg img {
 }
 .actions-product__button:not(:last-child) {
   margin: 0px 0px 24px 0px;
+}
+.actions-product__button._hold {
+  opacity: 0.4;
+  cursor: default;
 }
 .actions-product__link {
   display: flex;

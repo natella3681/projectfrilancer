@@ -47,7 +47,14 @@ window.onload = function() {
                 document.querySelector('.cart-header__body').classList.remove('_active');
             }
         //}
+    
+        if(targetElement.classList.contains('cart-list__delete')) {
+            const productId = targetElement.closest('.cart-list__item').dataset.cartPid;
+            updateCart(targetElement, productId, false);
+            e.preventDefault();
+        }
     }
+
 
     // ibg и адаптация картинки 
 
@@ -306,7 +313,7 @@ window.onload = function() {
                 <a href="" class="cart-list__image _ibg">${cartProductImage}</a>
                 <div class="cart-list__body">
                     <a href="" class="cart-list__title">${cartProductTitle}</a>
-                    <div class="cart-list__quantity">Quantity: <span></span></div>
+                    <div class="cart-list__quantity">Quantity: <span>1</span></div>
                     <a href="" class="cart-list__delete">Delete</a>
                 </div>
                 `;
@@ -318,6 +325,21 @@ window.onload = function() {
 
             // после всех действий 
             productButton.classList.remove('_hold');
+        } else {
+            const cartProductQuantity = cartProduct.querySelector('.cart-list__quantity span');
+            cartProductQuantity.innerHTML = --cartProductQuantity.innerHTML;
+            if(!parseInt(cartProductQuantity.innerHTML)) {
+                cartProduct.remove();
+            }
+
+            const cartQuantityValue = --cartQuantity.innerHTML;
+
+            if(cartQuantityValue) {
+                cartQuantity.innerHTML = cartQuantityValue;
+            } else {
+                cartQuantity.remove();
+                cart.classList.remove('_active');
+            }
         }
     }
 

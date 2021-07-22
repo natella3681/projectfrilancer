@@ -1184,34 +1184,13 @@
   &__more {
     border: 1px solid $orangeColor;
     min-width: 245px;
+    &._hold {
+      opacity: 0.4;
+      cursor: default;
+    }
   }
 }
-/*. {
-  // ._container
 
-  &_container {
-  }
-
-  // ._title
-
-  &_title {
-  }
-
-  // ._ibg
-
-  &_ibg {
-  }
-
-  // ._icon-share
-
-  &_icon-share {
-  }
-
-  // ._icon-favorite
-
-  &_icon-favorite {
-  }
-}*/
 .item-product {
   background-color: #f4f5f7;
   display: flex;
@@ -1362,6 +1341,10 @@
     flex: 1 1 100%;
     &:not(:last-child) {
       margin: 0px 0px 24px 0px;
+    }
+    &._hold {
+      opacity: 0.4;
+      cursor: default;
     }
   }
 
