@@ -4,13 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />-->
+
     <link rel="stylesheet" href="./styles/swiper.min.css">
     <link rel="stylesheet" href="styles/style.css" />
 
+    <script src="https://use.fontawesome.com/2a7526fdbd.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
     <script src="js/swiper.js" defer></script>
     <script src="js/adaptValue.js" defer></script>
@@ -23,53 +21,15 @@
         <div class="header__container _container">
           <div class="header__body">
             <div class="header__main">
-              <a href="" class="header__logo">Funiro.</a>
+              <a href="#" class="header__logo">Funiro.</a>
               <div class="header__menu menu">
                 <nav class="menu__body">
                   <ul data-spollers="768, max" class="menu__list">
                     <li class="menu__item">
                       <a href="" class="menu__link">Products</a>
-                      <button
-                        data-spoller
-                        type="button"
-                        class="menu__arrow _icon-arrow-down"
-                      ></button>
-                      <!--<ul class="menu__sub-list">
-                        <li class="menu__sub-item">
-                          <a href="#" class="menu__sub-link">Product #1</a>
-                        </li>
-                        <li class="menu__sub-item">
-                          <a href="#" class="menu__sub-link">Product #2</a>
-                        </li>
-                        <li class="menu__sub-item">
-                          <a href="#" class="menu__sub-link">Product #3</a>
-                        </li>
-                        <li class="menu__sub-item">
-                          <a href="#" class="menu__sub-link">Product #4</a>
-                        </li>
-                      </ul>-->
                     </li>
                     <li class="menu__item">
                       <a href="#" class="menu__link">Rooms</a>
-                      <button
-                        data-spoller
-                        type="button"
-                        class="menu__arrow _icon-arrow-down"
-                      ></button>
-                      <!--<ul class="menu__sub-list">
-                        <li class="menu__sub-item">
-                          <a href="#" class="menu__sub-link">Room #1</a>
-                        </li>
-                        <li class="menu__sub-item">
-                          <a href="#" class="menu__sub-link">Room #2</a>
-                        </li>
-                        <li class="menu__sub-item">
-                          <a href="#" class="menu__sub-link">Room #3</a>
-                        </li>
-                        <li class="menu__sub-item">
-                          <a href="#" class="menu__sub-link">Room #4</a>
-                        </li>
-                      </ul>-->
                     </li>
                     <li class="menu__item">
                       <a href="#" class="menu__link">Inspirations</a>
@@ -114,16 +74,9 @@
                 <div class="cart-header__body">
                   <ul class="cart-header__list cart-list"></ul>
                 </div>
-               <!-- <a href="" class="actions-header__item _ibg">
-                  <img
-                    src="./img/avatar.jpg"
-                    class="actions-header__item_user"
-                    alt="Avatar"
-                  />
-                </a>-->
               </div>
             </div>
-            <!----------- иконка бургер меню----------------->
+           
             <button type="button" class="icon-menu">
               <span></span><span></span><span></span>
             </button>
@@ -152,21 +105,19 @@
                 <div class="controls-slider-main__arrows slider-arrows">
                   <button
                     type="button"
-                    class="slider-arrow slider-arrow_next _icon-arrow-down"
-                  ></button>
+                    class="slider-arrow slider-arrow_next"
+                  ><i class="fa fa-chevron-left"></i></button>
                   <button
                     type="button"
-                    class="slider-arrow slider-arrow_prev _icon-arrow-down"
-                  ></button>
+                    class="slider-arrow slider-arrow_prev"
+                  ><i class="fa fa-chevron-right"></i></button>
                 </div>
               </div>
               <div class="slider-main__body swiper-container">
-                  <!-- Additional required wrapper -->
                   <div class="slider-main__wrapper swiper-wrapper">
-                    <!-- Slides -->
                     <div class="slider-main__slide swiper-slide">
                       <div class="slider-main__image">
-                        <img src="./img/main-slider/01.jpg" alt="Image" />
+                        <img src="./img/main-slider/01.jpg" alt="Image" class="_ibg"/>
                       </div>
                       <a href="#" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slider-main__content">
                         <div class="slider-main__title">Bohauss</div>
@@ -207,13 +158,7 @@
                       </a>
                     </div>
                   </div>
-                  <!-- If we need pagination -->
-                  <!--<div class="swiper-pagination"></div>-->
-                
-                  <!-- If we need scrollbar -->
                   <div class="swiper-scrollbar"></div>
-                  <!-- If we need pagination -->
-            
                 </div>
               </div>
             </div>
@@ -412,16 +357,15 @@
             <div class="slider-rooms__arrows slider-arrows">
               <button
                     type="button"
-                    class="slider-arrow slider-arrow_white slider-arrow_next _icon-arrow-down"
-                  ></button>
+                    class="slider-arrow slider-arrow_white slider-arrow_next"
+                  ><i class="fa fa-chevron-left"></i></button>
                   <button
                     type="button"
-                    class="slider-arrow slider-arrow_white slider-arrow_prev _icon-arrow-down"
-                  ></button>
+                    class="slider-arrow slider-arrow_white slider-arrow_prev"
+                  ><i class="fa fa-chevron-right"></i></button>
             </div>
             <div class="slider-rooms__dotts"></div>
           </div>
-          <!------------ end rooms__slider------------>
         </div>
       </section>
       <section class="page__tips tips">
@@ -470,12 +414,12 @@
             <div class="slider-tips__arrows slider-arrows">
                 <button
                     type="button"
-                    class="slider-arrow slider-arrow_white slider-arrow_next _icon-arrow-down"
-                  ></button>
+                    class="slider-arrow slider-arrow_white slider-arrow_next"
+                  ><i class="fa fa-chevron-left"></i></button>
                   <button
                     type="button"
-                    class="slider-arrow slider-arrow_white slider-arrow_prev _icon-arrow-down"
-                  ></button>
+                    class="slider-arrow slider-arrow_white slider-arrow_prev"
+                  ><i class="fa fa-chevron-right"></i></button>
             </div>
           </div>
         </div>

@@ -3,9 +3,7 @@
 @import "./variables.scss";
 @import "./reset.scss";
 @import "./ux.scss";
-//@import "./swiper.scss";
 
-/*-------------  header---------------*/
 .header {
   position: absolute;
   width: 100%;
@@ -32,7 +30,6 @@
       }
     }
   }
-  // .header__wrapper
 
   &__wrapper {
     transition: background-color 0.3s ease 0s;
@@ -216,57 +213,7 @@
           transform: rotate(-180deg);
         }
       }
-      //}
     }
-    // .menu__sub-list
-    /*&__sub-list {
-      position: relative;
-      background-color: $orangeColor;
-      padding: 15px;
-      flex: 1 1 100%;
-      @media (min-width: $md3+px) {
-        opacity: 0;
-        transition: all 0.3s ease 0s;
-        transform: translate(0px, 10px);
-        visibility: hidden;
-        min-width: 200px;
-        left: 0;
-        pointer-events: none;
-        position: absolute;
-        top: 100%;
-        z-index: 5;
-      }
-      @media (max-width: $md3+px) {
-        margin: 10px -15px 0px -15px;
-      }
-    }*/
-
-    // .menu__sub-item
-
-    /*&__sub-item {
-      display: none;
-      &:not(:last-child) {
-        margin: 0px 0px 5px 0px;
-        @media (max-width: $md3+px) {
-          margin: 0px 0px 10px 0px;
-        }
-      }
-    }*/
-
-    // .menu__sub-link
-
-    /*&__sub-link {
-      color: #fff;
-      line-height: 120%;
-      @media (any-hover: hover) {
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-      @media (max-width: $md3+px) {
-        font-size: 18px;
-      }
-    }*/
   }
   //}
 
@@ -402,12 +349,6 @@
       visibility: hidden;
       transition: all 0.3s ease 0s;
       transform: translate(0px, 20px);
-      /*&_active & {
-        background-color: red;
-        opacity: 1;
-        visibility: visible;
-        transform: translate(0px, 0px);
-      }*/
       @media (max-width: $md2+px) {
         top: 50px;
       }
@@ -614,35 +555,9 @@
   &__subscribe {
   }
 }
-.container {
-}
 
 .footer {
   flex-shrink: 0;
-  // .footer__subscribe
-
-  &__subscribe {
-  }
-}
-.subscribe {
-  // .subscribe__title
-
-  &__title {
-  }
-
-  // .subscribe__form
-
-  &__form {
-  }
-}
-
-.input {
-}
-.subscrobe {
-  // .subscrobe__button
-
-  &__button {
-  }
 }
 
 // ._footer-title
@@ -700,11 +615,6 @@
     margin: 0px 0px 16px/24px * 1em 0px;
     @media (min-width: $md3+px) {
       margin: 0px 0px 16px/24px * 1em 0px;
-      // стрелки для меню
-      /*display: flex;
-      width: 100%;
-      flex-direction: row-reverse;
-      @extend ._icon-arrow-down;*/
     }
   }
 
@@ -753,7 +663,7 @@
   &__form {
     display: flex;
     position: relative;
-    flex: 1 1 auto; /*растягивает и сжимает флекс-элемент относительно его собственной ширины*/
+    flex: 1 1 auto;
   }
 
   &__button {
@@ -775,7 +685,7 @@
   }
 
   &__input {
-    width: 100%; /*растягиваем тексовое поле на всю ширину родителя*/
+    width: 100%;
     padding: 0px 12px;
     background-color: #f4f5f7;
     font-size: 16px;
@@ -787,20 +697,6 @@
 
 .page {
   flex: 1 1 auto;
-  // .page__main-slider
-
-  &__main-slider {
-  }
-
-  &__advantages {
-  }
-
-  &__products {
-  }
-  &__rooms {
-  }
-  &__tips {
-  }
 }
 .main-slider {
   background-color: #fcf8f3;
@@ -953,10 +849,6 @@
   &__body {
     overflow: visible;
     width: 934px;
-    /*@media (min-width: $md2+px) {
-      @include adaptiv-value("width", 934, 290, 1);
-    }*/
-
     @media (max-width: $md2+px) {
       margin: 0px -15px;
     }
@@ -966,11 +858,6 @@
     @media (max-width: $md4+px) {
       max-width: 415px;
     }
-  }
-
-  // .slider-main__wrapper
-
-  &__wrapper {
   }
 
   // .slider-main__slide
@@ -1082,20 +969,6 @@
   }
 }
 
-.swiper-container {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.swiper-pagination {
-}
-.swiper-button-prev {
-}
-.swiper-button-next {
-}
-.swiper-scrollbar {
-}
 /* --------------------- swiper end----------__*/
 
 .advantages {
@@ -1153,10 +1026,6 @@
 
 .products {
   @include adaptiv-value("padding-bottom", 44, 30, 1);
-  // .products__container
-  &__container {
-  }
-
   // .products__title
 
   &__title {
@@ -1169,11 +1038,6 @@
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
-  }
-
-  // .products__item
-
-  &__item {
   }
 
   // .products__footer
@@ -1243,13 +1107,6 @@
       background-color: #2ec1ac;
     }
   }
-
-  // .item-product__image
-
-  &__image {
-    //padding: 0px 0px 301px/285px * 100% 0px;
-  }
-
   // .item-product__body
 
   &__body {
@@ -1525,11 +1382,6 @@
     }
   }
 
-  // .slider-rooms__label
-
-  &__label {
-  }
-
   // .slider-rooms__title
 
   &__title {
@@ -1570,11 +1422,6 @@
   }
 }
 
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-
 .label-slider {
   display: grid;
   color: $darkGreyColor;
@@ -1602,45 +1449,12 @@
   &__text {
   }
 }
-.slider-arrows {
-}
-.slider-arrow {
-  // .slider-arrow_white
-
-  &_white {
-  }
-
-  // .slider-arrow_next
-
-  &_next {
-  }
-
-  // .slider-arrow_prev
-
-  &_prev {
-  }
-}
 
 /*--------------- slider tips ---------------*/
 
 .tips {
   @include adaptiv-value("padding-top", 44, 30, 1);
   @include adaptiv-value("padding-bottom", 44, 30, 1);
-
-  // .tips__container
-
-  &__container {
-  }
-
-  // .tips__title
-
-  &__title {
-  }
-
-  // .tips__slider
-
-  &__slider {
-  }
 }
 
 .slider-tips {
@@ -1663,12 +1477,6 @@
         box-shadow: 0 0 32px rgba(97, 97, 97, 0.2);
       }
     }
-  }
-
-  // .slider-tips__image
-
-  &__image {
-    //padding-bottom: 251/391 * 100%;
   }
 
   // .slider-tips__content
@@ -1733,27 +1541,5 @@
     @media (max-width: $md3+px) {
       display: none;
     }
-  }
-}
-.swiper-container {
-}
-.swiper-wrapper {
-}
-.slider-arrows {
-}
-.slider-arrow {
-  // .slider-arrow_white
-
-  &_white {
-  }
-
-  // .slider-arrow_next
-
-  &_next {
-  }
-
-  // .slider-arrow_prev
-
-  &_prev {
   }
 }
